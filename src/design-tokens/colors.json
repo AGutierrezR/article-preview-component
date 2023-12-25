@@ -11,20 +11,20 @@
       "value": "hsl(0, 0%, 100%)"
     },
     {
-      "name": "Dark cyan",
-      "value": "hsl(158, 36%, 37%)"
+      "name": "Very Dark Grayish Blue",
+      "value": "hsl(217, 19%, 35%)"
     },
     {
-      "name": "Cream",
-      "value": "hsl(30, 38%, 92%)"
+      "name": "Desaturated Dark Blue",
+      "value": "hsl(214, 17%, 51%)"
     },
     {
-      "name": "Very dark blue",
-      "value": "hsl(292, 42%, 14%)"
+      "name": "Grayish Blue",
+      "value": "hsl(212, 23%, 69%)"
     },
     {
-      "name": "Dark grayish blue",
-      "value": "hsl(228, 12%, 48%)"
+      "name": "Light Grayish Blue",
+      "value": "hsl(210, 46%, 95%)"
     }
   ]
 }

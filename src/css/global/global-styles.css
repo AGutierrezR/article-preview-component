@@ -5,14 +5,15 @@
   project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark-grayish-violet);
-  line-height: 1.6;
+  color: var(--color-desaturated-dark-blue);
+  line-height: 1.55;
   font-size: var(--size-base);
   font-family: var(--font-base);
   font-weight: 500;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  letter-spacing: 0.1px;
 }
 
 main {
@@ -21,6 +22,8 @@ main {
 
 h1 {
   font-size: var(--size-step-3);
+  letter-spacing: 0.2px;
+  line-height: 1.5;
 }
 
 h2 {
@@ -38,7 +41,7 @@ h4 {
 :is(h1, h2, h3, h4) {
   font-family: var(--font-heading);
   font-weight: 700;
-  color: var(--color-very-dark-violet);
+  color: var(--color-very-dark-grayish-blue);
 }
 
 a {

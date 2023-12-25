@@ -12,10 +12,10 @@
 @import './compositions/cover.css';
 @import './compositions/grid.css';
 @import './compositions/repel.css';
+@import './compositions/sidebar.css';
 @import './compositions/switcher.css';
 
 @import './utilities/center.css';
-@import './utilities/flow.css';
 @import './utilities/flow.css';
 @import './utilities/region.css';
 @import './utilities/stack.css';

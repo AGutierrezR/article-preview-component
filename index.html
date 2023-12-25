@@ -14,23 +14,48 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="flex flex-col justify-center">
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
+  <main class="region grow flex flex-col justify-center">
+    <div class="wrapper">
+      <div class="sidebar gap-0 overflow-hidden rounded-xl bg-white/5">
+        <div class="opacity-5 max-h-[200px]">
+          <img class="object-cover h-full w-full" src="images/drawers.jpg" alt="">
+        </div>
+        <div class="flow py-8 pb-5 px-8">
+          <h1>
+            Shift the overall look and feel by adding these wonderful
+            touches to furniture in your home
+          </h1>
+          <p>
+            Ever been in a room and felt like something was missing? Perhaps
+            it felt slightly bare and uninviting. I've got some simple tips
+            to help you make any room feel complete.
+          </p>
+          <div class="cluster mt-8 gap-4">
+            <img class="rounded-full w-10" src="/images/avatar-michelle.jpg" alt="">
+            <div>
+              <span class="block font-bold text-very-dark-grayish-blue">Michelle Appleton</span>
+              <span>28 Jun 2020</span>
+            </div>
+            <div class="ml-auto bg-light-grayish-blue p-2 rounded-full">
+              <svg class="w-4 h-4">
+                <use xlink:href="#:share" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </div>
+  </main>
+  
+  <svg class="hidden">
+    <symbol id=":share" viewBox="0 0 15 13">
+      <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+    </symbol>
+  </svg>
+
+  <script type="module" src="src/main.js"></script>
 </body>
 </html>

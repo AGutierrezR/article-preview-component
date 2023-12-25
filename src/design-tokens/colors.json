@@ -1,0 +1,30 @@
+{
+  "title": "Colors",
+  "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print.",
+  "items": [
+    {
+      "name": "Dark",
+      "value": "hsl(0, 0%, 15%)"
+    },
+    {
+      "name": "White",
+      "value": "hsl(0, 0%, 100%)"
+    },
+    {
+      "name": "Dark cyan",
+      "value": "hsl(158, 36%, 37%)"
+    },
+    {
+      "name": "Cream",
+      "value": "hsl(30, 38%, 92%)"
+    },
+    {
+      "name": "Very dark blue",
+      "value": "hsl(292, 42%, 14%)"
+    },
+    {
+      "name": "Dark grayish blue",
+      "value": "hsl(228, 12%, 48%)"
+    }
+  ]
+}

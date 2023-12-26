@@ -66,3 +66,7 @@ blockquote,
 figcaption {
   max-width: 65ch;
 }
+
+svg {
+  pointer-events: none;
+}

@@ -32,19 +32,21 @@
             it felt slightly bare and uninviting. I've got some simple tips
             to help you make any room feel complete.
           </p>
-          <div class="cluster max-sm:mt-8 sm:mt-5 gap-4">
+          <div x-data="tooltip" class="cluster max-sm:mt-8 sm:mt-5 gap-4">
             <img class="rounded-full w-10" src="/images/avatar-michelle.jpg" alt="">
             <div>
               <span class="block font-bold text-very-dark-grayish-blue">Michelle Appleton</span>
               <span>28 Jun 2020</span>
             </div>
-            <button aria-label="Share"
+            <button x-bind="trigger" aria-label="Share"
               class="ml-auto bg-light-grayish-blue p-2 rounded-full hover:bg-desaturated-dark-blue group">
               <svg class="w-4 h-4 group-hover:brightness-[100]">
                 <use xlink:href="#:share" />
               </svg>
             </button>
             <div
+              x-show="isOpen"
+              @click.outside="close()"
               class="absolute w-full bottom-0 left-0 bg-very-dark-grayish-blue cluster gap-4 rounded-b-lg px-8 text-white py-5">
               <span class=" text-grayish-blue uppercase tracking-[5px] leading-[2.5rem]">Share</span>
               <div class="cluster gap-4">
@@ -64,7 +66,7 @@
                   </svg>
                 </button>
               </div>
-              <button aria-label="close" class="ml-auto p-2 rounded-full bg-desaturated-dark-blue">
+              <button x-bind="trigger" aria-label="close" class="ml-auto p-2 rounded-full bg-desaturated-dark-blue">
                 <svg class="w-4 h-4 brightness-[100]">
                   <use xlink:href="#:share" />
                 </svg>
@@ -73,7 +75,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </main>
 

@@ -29,7 +29,10 @@ module.exports = {
     }),
     padding: ({ theme }) => theme('spacing'),
     extend: {
-      spacing
+      spacing,
+      boxShadow: {
+        DEFAULT: '0 2.5rem 2.5rem -0.625rem  hsla(212, 23%, 69%, 0.2)'
+      }
     }
   },
   plugins: [

@@ -7,12 +7,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Article preview component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body class="flex flex-col justify-center bg-light-grayish-blue">
 
@@ -38,9 +32,9 @@
               <span class="block font-bold text-very-dark-grayish-blue">Michelle Appleton</span>
               <span>28 Jun 2020</span>
             </div>
-            <button @click="open($event)" aria-label="Share"
-              class="ml-auto bg-light-grayish-blue p-2 rounded-full hover:bg-desaturated-dark-blue group">
-              <svg class="w-4 h-4 group-hover:brightness-[100]">
+            <button @click="open($event)" aria-label="Share" :aria-expanded="isOpen"
+              class="ml-auto bg-light-grayish-blue p-2 rounded-full hover:bg-desaturated-dark-blue aria-expanded:bg-desaturated-dark-blue group">
+              <svg class="w-4 h-4 group-hover:brightness-[100] group-aria-expanded:brightness-[100]">
                 <use xlink:href="#:share" />
               </svg>
             </button>

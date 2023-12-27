@@ -7,16 +7,37 @@ window.tippy = tippy
 
 Alpine.data('tooltip', () => ({
   isOpen: false,
+  instance: null,
 
-  trigger: {
-    ['@click']() {
-      this.isOpen = !this.isOpen
-    }
-  }, 
+  open(ev) {
+    this.isOpen = true
+
+    this.instance = tippy(ev.target, {
+      content: this.$refs.content.cloneNode(true).innerHTML,
+      trigger: 'manual',
+      allowHTML: true,
+      interactive: true,
+      offset: [0 , 20],
+      theme: 'article-tooltip',
+      popperOptions: {
+        modifiers: [
+          {
+            name: 'preventOverflow',
+            options: {
+              boundary: document.body,
+            },
+          },
+        ],
+      },
+    })
+
+    this.instance.show()
+  },
+
   close() {
     this.isOpen = false
-  }
-
+    this.instance && this.instance.destroy()
+  },
 }))
 
 window.Alpine = Alpine

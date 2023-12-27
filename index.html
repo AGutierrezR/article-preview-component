@@ -18,11 +18,11 @@
 
   <main class="region grow flex flex-col justify-center">
     <div class="wrapper">
-      <div class="sidebar gap-0 overflow-hidden rounded-xl bg-white max-w-[400px] sm:max-w-[730px] mx-auto shadow-lg">
-        <div class="max-sm:max-h-[200px]">
+      <div class="sidebar gap-0 rounded-xl max-sm:overflow-hidden bg-white max-w-[400px] sm:max-w-[730px] mx-auto shadow-lg">
+        <div class="max-sm:max-h-[200px] max-sm:rounded-t-xl sm:rounded-l-xl overflow-hidden">
           <img class="object-cover h-full w-full" src="images/drawers.jpg" alt="">
         </div>
-        <div class="flow py-7 pb-5 px-8 sm:px-9 sm:py-8 relative">
+        <div class="relative flow py-7 pb-5 px-8 sm:px-9 sm:py-8">
           <h1>
             Shift the overall look and feel by adding these wonderful
             touches to furniture in your home
@@ -38,39 +38,42 @@
               <span class="block font-bold text-very-dark-grayish-blue">Michelle Appleton</span>
               <span>28 Jun 2020</span>
             </div>
-            <button x-bind="trigger" aria-label="Share"
+            <button @click="open($event)" aria-label="Share"
               class="ml-auto bg-light-grayish-blue p-2 rounded-full hover:bg-desaturated-dark-blue group">
               <svg class="w-4 h-4 group-hover:brightness-[100]">
                 <use xlink:href="#:share" />
               </svg>
             </button>
-            <div
-              x-show="isOpen"
+            <div 
+              x-show="isOpen" 
+              x-ref="content" 
               @click.outside="close()"
-              class="absolute w-full bottom-0 left-0 bg-very-dark-grayish-blue cluster gap-4 rounded-b-lg px-8 text-white py-5">
-              <span class=" text-grayish-blue uppercase tracking-[5px] leading-[2.5rem]">Share</span>
-              <div class="cluster gap-4">
-                <button>
-                  <svg class="w-5 h-5">
-                    <use xlink:href="#:facebook" />
-                  </svg>
-                </button>
-                <button>
-                  <svg class="w-5 h-5">
-                    <use xlink:href="#:twitter" />
-                  </svg>
-                </button>
-                <button>
-                  <svg class="w-5 h-5">
-                    <use xlink:href="#:pinterest" />
+              class="absolute sm:invisible w-full bottom-0 left-0 bg-very-dark-grayish-blue">
+              <div class="cluster gap-4 rounded-b-lg px-8 text-white py-5 sm:py-4 sm:px-9">
+                <span class=" text-grayish-blue uppercase tracking-[5px] leading-[2.5rem] sm:leading-none">Share</span>
+                <div class="cluster gap-4">
+                  <button>
+                    <svg class="w-5 h-5">
+                      <use xlink:href="#:facebook" />
+                    </svg>
+                  </button>
+                  <button>
+                    <svg class="w-5 h-5">
+                      <use xlink:href="#:twitter" />
+                    </svg>
+                  </button>
+                  <button>
+                    <svg class="w-5 h-5">
+                      <use xlink:href="#:pinterest" />
+                    </svg>
+                  </button>
+                </div>
+                <button @click="close()" aria-label="close" class="ml-auto p-2 sm:hidden rounded-full bg-desaturated-dark-blue">
+                  <svg class="w-4 h-4 brightness-[100]">
+                    <use xlink:href="#:share" />
                   </svg>
                 </button>
               </div>
-              <button x-bind="trigger" aria-label="close" class="ml-auto p-2 rounded-full bg-desaturated-dark-blue">
-                <svg class="w-4 h-4 brightness-[100]">
-                  <use xlink:href="#:share" />
-                </svg>
-              </button>
             </div>
           </div>
         </div>

@@ -1,0 +1,18 @@
+@media (max-width: 640px) {
+  [id^="tippy-"] {
+    display: none;
+  }
+}
+
+[data-theme="article-tooltip"] {
+  background-color: var(--color-very-dark-grayish-blue);
+  border-radius: 8px;
+}
+
+[data-theme="article-tooltip"] .tippy-arrow {
+  color: var(--color-very-dark-grayish-blue)
+}
+
+[data-theme="article-tooltip"] .tippy-arrow::before {
+  transform: scale(1.5);
+}

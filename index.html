@@ -9,7 +9,6 @@
   <title>Frontend Mentor | Article preview component</title>
 </head>
 <body class="flex flex-col justify-center bg-light-grayish-blue">
-
   <main class="region grow flex flex-col justify-center">
     <div class="wrapper">
       <div
@@ -35,7 +34,7 @@
             </div>
             <button @click="open($event)" aria-label="Share" :aria-expanded="isOpen"
               class="ml-auto bg-light-grayish-blue p-2 rounded-full hover:bg-desaturated-dark-blue aria-expanded:bg-desaturated-dark-blue group">
-              <svg class="w-4 h-4 group-hover:brightness-[100] group-aria-expanded:brightness-[100]">
+              <svg class="size-4 group-hover:brightness-[100] group-aria-expanded:brightness-[100]">
                 <use xlink:href="#:share" />
               </svg>
             </button>
@@ -45,24 +44,24 @@
                 <span class=" text-grayish-blue uppercase tracking-[5px] leading-[2.5rem] sm:leading-none">Share</span>
                 <div class="cluster gap-4">
                   <button>
-                    <svg class="w-5 h-5">
+                    <svg class="size-5">
                       <use xlink:href="#:facebook" />
                     </svg>
                   </button>
                   <button>
-                    <svg class="w-5 h-5">
+                    <svg class="size-5">
                       <use xlink:href="#:twitter" />
                     </svg>
                   </button>
                   <button>
-                    <svg class="w-5 h-5">
+                    <svg class="size-5">
                       <use xlink:href="#:pinterest" />
                     </svg>
                   </button>
                 </div>
                 <button @click="close()" aria-label="close"
                   class="ml-auto p-2 sm:hidden rounded-full bg-desaturated-dark-blue">
-                  <svg class="w-4 h-4 brightness-[100]">
+                  <svg class="size-4 brightness-[100]">
                     <use xlink:href="#:share" />
                   </svg>
                 </button>
